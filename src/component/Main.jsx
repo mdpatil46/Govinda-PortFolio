@@ -60,9 +60,9 @@ function Main() {
           activeSection: "skill",
         });
       } else if (myScroll > myProject) {
-        setMyscroll({        
+        setMyscroll({
           transform: "translateY(0px)",
-          opacity: "1",         
+          opacity: "1",
           activeSection: "project",
         });
       } else
@@ -80,6 +80,10 @@ function Main() {
       window.removeEventListener("myscroll", handalEffect);
     };
   }, []);
+
+  function gotoEcom(){
+    window.location.href = "https://apple-store-india.netlify.app/"
+  }
 
   return (
     <>
@@ -128,16 +132,16 @@ function Main() {
         <div className="flex  sm:flex-relative space-x-72">
           <div
             className=" ml-8 sm:ml-28 text-left"
-            style={{
-              transform:
-                scroll.activeSection === "about"
-                  ? "translateY(0px)"
-                  : myscroll.transform,
-              opacity:
-                scroll.activeSection === "about" ? "1" : myscroll.opacity,
-                transition:
-                scroll.activeSection ==="about" ? "all 2s ease": myscroll.transition,
-            }}
+            // style={{
+            //   transform:
+            //     scroll.activeSection === "about"
+            //       ? "translateY(0px)"
+            //       : myscroll.transform,
+            //   opacity:
+            //     scroll.activeSection === "about" ? "1" : myscroll.opacity,
+            //     transition:
+            //     scroll.activeSection ==="about" ? "all 2s ease": myscroll.transition,
+            // }}
           >
             <p className="text-emerald-400 ml-1 "> Hi, my Name is</p>
             <p className="text-white text-6xl font-bold mt-2">
@@ -164,16 +168,20 @@ function Main() {
             </button>
           </div>
 
-          <div style={{
+          <div
+            style={{
               transform:
                 scroll.activeSection === "about"
                   ? "translateY(0px)"
                   : myscroll.transform,
               opacity:
                 scroll.activeSection === "about" ? "1" : myscroll.opacity,
-                transition:
-                scroll.activeSection ==="about" ? "all 2s ease": myscroll.transition,
-            }} >
+              transition:
+                scroll.activeSection === "about"
+                  ? "all 2s ease"
+                  : myscroll.transition,
+            }}
+          >
             <img
               src="https://i.pinimg.com/originals/67/6e/cb/676ecb6b2285efc0fd531383c8567a26.jpg"
               alt=""
@@ -250,7 +258,9 @@ function Main() {
                 : myscroll.transform,
             opacity: scroll.activeSection === "skill" ? "1" : myscroll.opacity,
             transition:
-            scroll.activeSection ==="about" ? "all 2s ease": myscroll.transition,
+              scroll.activeSection === "about"
+                ? "all 1s ease"
+                : myscroll.transition,
           }}
         >
           <p className="text-4xl sm:text-5xl font-bold text-white">Skill.</p>
@@ -416,28 +426,47 @@ function Main() {
                 : myscroll.transform,
             opacity:
               scroll.activeSection === "project" ? "1" : myscroll.opacity,
-              transition:
-              scroll.activeSection ==="about" ? "all 2s ease": myscroll.transition,
+            transition:
+              scroll.activeSection === "about"
+                ? "all 2s ease"
+                : myscroll.transition,
           }}
         >
           <p className="text-4xl sm:text-5xl font-bold text-white">Projects.</p>
           <div className=" flex relative space-x-4">
             <div className="mt-5">
-              <p className="text-white font-semibold text-2xl">
-                1.E-Commerce platform{" "}
-              </p>
+              <div className="flex flex-row" onClick={gotoEcom}>
+                <p className="text-white font-semibold text-2xl">
+                  1.E-Commerce platform{" "}
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  height="20px"
+                  width='20px'
+                  class="feather feather-external-link text-white"
+                >
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                <p className="underline text-blue-400">click to go </p>
+              </div>
               <img
                 src={img1}
                 alt=""
                 className=" h-72 sm:h-96 w-full sm:w-400 rounded-3xl mt-4 mb-3 "
               />
-
-              <p className="text-gray-400 font-semibold text-xl">
+              <p className="text-white font-semibold text-xl">
                 E-commerce platform promoting eco-friendly{" "}
               </p>
-              <p className="text-gray-400 font-semibold text-xl">
-                products with payment integration.
-              </p>
+              <p className="text-white font-normal text-lg mb-4"> React.js, Tailwind CSS, Redux Toolkit, React Router</p>
+             
             </div>
           </div>
         </div>
