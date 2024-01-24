@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import img1 from "/src/Capture.jpg";
+import img2 from "/src/Contact.jpg";
 
 function Main() {
   const [scroll, setScroll] = useState({ color: "gray" });
@@ -183,9 +184,9 @@ function Main() {
             }}
           >
             <img
-              src="https://i.pinimg.com/originals/67/6e/cb/676ecb6b2285efc0fd531383c8567a26.jpg"
+              src={img2}
               alt=""
-              className="h-60 w-60 rounded-full"
+              className="h-60 w-60 rounded-full object-cover"
             />
           </div>
         </div>

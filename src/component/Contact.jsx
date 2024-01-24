@@ -27,6 +27,7 @@ rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:s
                  Govinda Patil
               </p>
               <p className="text-slate-500 font-medium"> Frontend Web Devloper</p>
+              <p className="text-black font-normal">govindapatil46@gmail.com</p>
             </div>
             <button
               onClick={whatsApp}
@@ -34,12 +35,12 @@ rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:s
             >
               WhatsApp
             </button>
-            <button
+            {/* <button
               
               className="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
             >
               Gmail
-            </button>
+            </button> */}
             <button
               
               className="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
