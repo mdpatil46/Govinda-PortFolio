@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import img1 from "/src/Capture.jpg";
 import img2 from "/src/Contact.jpg";
+import { Link } from "react-router-dom";
 
 function Main() {
   const [scroll, setScroll] = useState({ color: "gray" });
@@ -82,8 +83,8 @@ function Main() {
     };
   }, []);
 
-  function gotoEcom(){
-    window.location.href = "https://apple-store-india.netlify.app/"
+  function gotoEcom() {
+    window.location.href = "https://apple-store-india.netlify.app/";
   }
 
   return (
@@ -267,7 +268,7 @@ function Main() {
           <p className="text-4xl sm:text-5xl font-bold text-white">Skill.</p>
 
           <div className=" w-80 sm:w-96 mt-5">
-            <div className="grid grid-cols-4 sm:grid-cols-8 gap-2 sm:gap-24">
+            <div className="grid grid-cols-4 sm:grid-cols-9 gap-2 sm:gap-24">
               <div className="">
                 <svg
                   width="80px"
@@ -414,6 +415,19 @@ function Main() {
                   />
                 </svg>
               </div>
+              <div className="text-white ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1333.33 773.55"
+                  width="80px"
+                  height="80px"
+                >
+                  <path
+                    d="M1333.33 753.49c-48.5 12.33-78.5.54-105.41-39.87L1036.5 448.79l-27.67-36.67L785.29 714.5c-25.54 36.38-52.33 52.2-100 39.33l286.25-384.25-266.5-347.09c45.83-8.91 77.5-4.38 105.62 36.67l198.54 268.13 200-266.67c25.62-36.38 53.17-50.2 99.17-36.8l-103.33 137-140 182.29c-16.67 20.83-14.38 35.09.96 55.2l267.33 355.18zM.34 363.16l23.41-115.17c63.75-227.92 325-322.63 505.17-181.8 105.29 82.83 131.46 200 126.25 331.25H61.67C52.76 633.69 222.8 776.27 439.58 703.53c76.04-25.54 120.83-85.09 143.25-159.58 11.38-37.33 30.2-43.17 65.29-32.5-17.91 93.17-58.33 171-143.75 219.71-127.62 72.91-309.8 49.33-405.62-52C41.66 620.36 18.08 545.87 7.5 466.2c-1.67-13.17-5-25.71-7.5-38.33.22-21.56.34-43.11.34-64.67v-.04zm62.41-15.83h536.33c-3.5-170.83-109.87-292.17-255.25-293.2-159.58-1.25-274.17 117.2-281.09 293.2h.01z"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -449,7 +463,7 @@ function Main() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   height="20px"
-                  width='20px'
+                  width="20px"
                   class="feather feather-external-link text-white"
                 >
                   <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -466,11 +480,76 @@ function Main() {
               <p className="text-white font-semibold text-xl">
                 E-commerce platform promoting eco-friendly{" "}
               </p>
-              <p className="text-white font-normal text-lg mb-4"> React.js, Tailwind CSS, Redux Toolkit, React Router</p>
-             
+              <p className="text-white font-normal text-lg mb-4">
+                {" "}
+                React.js, Tailwind CSS, Redux Toolkit, React Router
+              </p>
             </div>
           </div>
         </div>
+        <footer>
+          <div className="flex justify-end space-x-2 mr-10 mb-5">
+              <div>
+              <Link to="https://wa.me/8691827914s" target="_blank">
+                <svg
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 240 241.19"
+                  height="30px"
+                  width="30px"
+                >
+                  <path
+                    class="cls-1"
+                    d="M205,35.05A118.61,118.61,0,0,0,120.46,0C54.6,0,1,53.61,1,119.51a119.5,119.5,0,0,0,16,59.74L0,241.19l63.36-16.63a119.43,119.43,0,0,0,57.08,14.57h0A119.54,119.54,0,0,0,205,35.07v0ZM120.5,219A99.18,99.18,0,0,1,69.91,205.1l-3.64-2.17-37.6,9.85,10-36.65-2.35-3.76A99.37,99.37,0,0,1,190.79,49.27,99.43,99.43,0,0,1,120.49,219ZM175,144.54c-3-1.51-17.67-8.71-20.39-9.71s-4.72-1.51-6.75,1.51-7.72,9.71-9.46,11.72-3.49,2.27-6.45.76-12.63-4.66-24-14.84A91.1,91.1,0,0,1,91.25,113.3c-1.75-3-.19-4.61,1.33-6.07s3-3.48,4.47-5.23a19.65,19.65,0,0,0,3-5,5.51,5.51,0,0,0-.24-5.23C99,90.27,93,75.57,90.6,69.58s-4.89-5-6.73-5.14-3.73-.09-5.7-.09a11,11,0,0,0-8,3.73C67.48,71.05,59.75,78.3,59.75,93s10.69,28.88,12.19,30.9S93,156.07,123,169c7.12,3.06,12.68,4.9,17,6.32a41.18,41.18,0,0,0,18.8,1.17c5.74-.84,17.66-7.21,20.17-14.18s2.5-13,1.75-14.19-2.69-2.06-5.7-3.59l0,0Z"
+                    fill="#ffffff"
+                  />
+                </svg>
+                </Link>
+            </div>
+            <div>
+              <Link to="https://www.linkedin.com/in/govinda-patil" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                image-rendering="optimizeQuality"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                viewBox="0 0 512 509.64"
+                height="30px"
+                width="30px"
+              >
+                <rect width="512" height="509.64" rx="115.61" ry="115.61" />
+                <path
+                  fill="#fff"
+                  d="M204.97 197.54h64.69v33.16h.94c9.01-16.16 31.04-33.16 63.89-33.16 68.31 0 80.94 42.51 80.94 97.81v116.92h-67.46l-.01-104.13c0-23.81-.49-54.45-35.08-54.45-35.12 0-40.51 25.91-40.51 52.72v105.86h-67.4V197.54zm-38.23-65.09c0 19.36-15.72 35.08-35.08 35.08-19.37 0-35.09-15.72-35.09-35.08 0-19.37 15.72-35.08 35.09-35.08 19.36 0 35.08 15.71 35.08 35.08zm-70.17 65.09h70.17v214.73H96.57V197.54z"
+                />
+              </svg>
+              </Link>
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                image-rendering="optimizeQuality"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                viewBox="0 0 512 509.64"
+                height="30px"
+                width="30px"
+              >
+                <rect width="512" height="509.64" rx="115.61" ry="115.61" />
+                <path
+                  fill="#fff"
+                  fill-rule="nonzero"
+                  d="M323.74 148.35h36.12l-78.91 90.2 92.83 122.73h-72.69l-56.93-74.43-65.15 74.43h-36.14l84.4-96.47-89.05-116.46h74.53l51.46 68.04 59.53-68.04zm-12.68 191.31h20.02l-129.2-170.82H180.4l130.66 170.82z"
+                />
+              </svg>
+            </div>
+          </div>
+        </footer>
       </div>
     </>
   );
