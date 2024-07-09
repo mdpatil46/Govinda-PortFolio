@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import img1 from "/src/Capture.jpg";
 import img2 from "/src/Contact.jpg";
 import { Link } from "react-router-dom";
+import Form from "../form/Form";
 
 function Main() {
   const [scroll, setScroll] = useState({ color: "gray" });
@@ -87,6 +88,7 @@ function Main() {
     window.location.href = "https://apple-store-india.netlify.app/";
   }
 
+
   return (
     <>
       <div className="w-screen bg-gray-900 pt-32 overflow-hidden">
@@ -168,7 +170,17 @@ function Main() {
             >
               Resume
             </button>
+            <Link to="/Form">
+              <button
+              type="button"
+              class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800 mt-4"
+              
+            >
+              Connect With Me
+            </button>
+            </Link>
           </div>
+          
 
           <div
             style={{
