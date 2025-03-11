@@ -48,7 +48,7 @@ function Main() {
       const myScroll = window.scrollY || window.pageYOffset;
       const myAbout = window.scrollY;
       const myskill = 400;
-      const myProject = 700;
+      const myProject = 400;
 
       if (myScroll > myAbout) {
         setMyscroll({
@@ -500,7 +500,7 @@ function Main() {
           </div>
         </div>
         <footer>
-          <div className="flex justify-end space-x-2 mr-10 mb-5">
+          <div className="flex justify-end space-x-2 mr-10 mb-5 mt-20">
               <div>
               <Link to="https://wa.me/8691827914s" target="_blank">
                 <svg
