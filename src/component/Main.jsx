@@ -4,6 +4,7 @@ import img2 from "/src/Contact.jpg";
 import { Link } from "react-router-dom";
 import Form from "../form/Form";
 
+
 function Main() {
   const [scroll, setScroll] = useState({ color: "gray" });
 
@@ -165,7 +166,7 @@ function Main() {
             </p>
             <button
               type="button"
-              class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800 mt-4"
+              className ="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800 mt-4"
               onClick={Resume}
             >
               Resume
@@ -173,7 +174,7 @@ function Main() {
             <Link to="/Form">
               <button
               type="button"
-              class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800 mt-4"
+              className ="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800 mt-4"
               
             >
               Connect With Me
@@ -212,9 +213,9 @@ function Main() {
             height="24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="animate-bounce w-6 h-6 text-white"
           >
             <path d="M6 9l6 6 6-6" />
@@ -226,9 +227,9 @@ function Main() {
             height="24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="animate-bounce w-6 h-6 text-white"
           >
             <path d="M6 9l6 6 6-6" />
@@ -240,9 +241,9 @@ function Main() {
             height="24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="animate-bounce w-6 h-6 text-white"
           >
             <path d="M6 9l6 6 6-6" />
@@ -254,9 +255,9 @@ function Main() {
             height="24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="animate-bounce w-6 h-6 text-white"
           >
             <path d="M6 9l6 6 6-6" />
@@ -398,7 +399,7 @@ function Main() {
                   width="80px"
                   height="80px"
                 >
-                  <g fill-rule="nonzero">
+                  <g fillRule="nonzero">
                     <path
                       d="M295.27 3.65l35.58 66.83c8 12.33 16.67 23.25 26.87 33.42 29.79 29.79 58.08 60.99 83.5 94.41 60.28 79.16 100.95 167.07 129.98 262.14 17.42 58.08 26.87 117.66 27.58 177.9 2.91 180.11-58.83 334.76-183.31 463.28-20.33 20.33-42.08 39.16-65.41 55.91-12.33 0-18.17-9.46-23.25-18.16-9.45-15.96-15.25-34.17-18.16-52.29-4.38-21.8-7.25-43.58-5.83-66.08v-10.16c-1-2.17-11.87-1002.07-7.54-1007.19v.01z"
                       fill="#599636"
@@ -436,7 +437,7 @@ function Main() {
                 >
                   <path
                     d="M1333.33 753.49c-48.5 12.33-78.5.54-105.41-39.87L1036.5 448.79l-27.67-36.67L785.29 714.5c-25.54 36.38-52.33 52.2-100 39.33l286.25-384.25-266.5-347.09c45.83-8.91 77.5-4.38 105.62 36.67l198.54 268.13 200-266.67c25.62-36.38 53.17-50.2 99.17-36.8l-103.33 137-140 182.29c-16.67 20.83-14.38 35.09.96 55.2l267.33 355.18zM.34 363.16l23.41-115.17c63.75-227.92 325-322.63 505.17-181.8 105.29 82.83 131.46 200 126.25 331.25H61.67C52.76 633.69 222.8 776.27 439.58 703.53c76.04-25.54 120.83-85.09 143.25-159.58 11.38-37.33 30.2-43.17 65.29-32.5-17.91 93.17-58.33 171-143.75 219.71-127.62 72.91-309.8 49.33-405.62-52C41.66 620.36 18.08 545.87 7.5 466.2c-1.67-13.17-5-25.71-7.5-38.33.22-21.56.34-43.11.34-64.67v-.04zm62.41-15.83h536.33c-3.5-170.83-109.87-292.17-255.25-293.2-159.58-1.25-274.17 117.2-281.09 293.2h.01z"
-                    fill-rule="nonzero"
+                    fillRule="nonzero"
                   />
                 </svg>
               </div>
@@ -476,7 +477,7 @@ function Main() {
                   strokeLinejoin="round"
                   height="20px"
                   width="20px"
-                  class="feather feather-external-link text-white"
+                  className ="feather feather-external-link text-white"
                 >
                   <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                   <polyline points="15 3 21 3 21 9"></polyline>
@@ -512,7 +513,7 @@ function Main() {
                   width="30px"
                 >
                   <path
-                    class="cls-1"
+                    className ="cls-1"
                     d="M205,35.05A118.61,118.61,0,0,0,120.46,0C54.6,0,1,53.61,1,119.51a119.5,119.5,0,0,0,16,59.74L0,241.19l63.36-16.63a119.43,119.43,0,0,0,57.08,14.57h0A119.54,119.54,0,0,0,205,35.07v0ZM120.5,219A99.18,99.18,0,0,1,69.91,205.1l-3.64-2.17-37.6,9.85,10-36.65-2.35-3.76A99.37,99.37,0,0,1,190.79,49.27,99.43,99.43,0,0,1,120.49,219ZM175,144.54c-3-1.51-17.67-8.71-20.39-9.71s-4.72-1.51-6.75,1.51-7.72,9.71-9.46,11.72-3.49,2.27-6.45.76-12.63-4.66-24-14.84A91.1,91.1,0,0,1,91.25,113.3c-1.75-3-.19-4.61,1.33-6.07s3-3.48,4.47-5.23a19.65,19.65,0,0,0,3-5,5.51,5.51,0,0,0-.24-5.23C99,90.27,93,75.57,90.6,69.58s-4.89-5-6.73-5.14-3.73-.09-5.7-.09a11,11,0,0,0-8,3.73C67.48,71.05,59.75,78.3,59.75,93s10.69,28.88,12.19,30.9S93,156.07,123,169c7.12,3.06,12.68,4.9,17,6.32a41.18,41.18,0,0,0,18.8,1.17c5.74-.84,17.66-7.21,20.17-14.18s2.5-13,1.75-14.19-2.69-2.06-5.7-3.59l0,0Z"
                     fill="#ffffff"
                   />
@@ -526,8 +527,8 @@ function Main() {
                 shape-rendering="geometricPrecision"
                 text-rendering="geometricPrecision"
                 image-rendering="optimizeQuality"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 viewBox="0 0 512 509.64"
                 height="30px"
                 width="30px"
@@ -546,8 +547,8 @@ function Main() {
                 shape-rendering="geometricPrecision"
                 text-rendering="geometricPrecision"
                 image-rendering="optimizeQuality"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 viewBox="0 0 512 509.64"
                 height="30px"
                 width="30px"
@@ -555,7 +556,7 @@ function Main() {
                 <rect width="512" height="509.64" rx="115.61" ry="115.61" />
                 <path
                   fill="#fff"
-                  fill-rule="nonzero"
+                  fillRule="nonzero"
                   d="M323.74 148.35h36.12l-78.91 90.2 92.83 122.73h-72.69l-56.93-74.43-65.15 74.43h-36.14l84.4-96.47-89.05-116.46h74.53l51.46 68.04 59.53-68.04zm-12.68 191.31h20.02l-129.2-170.82H180.4l130.66 170.82z"
                 />
               </svg>
@@ -564,7 +565,7 @@ function Main() {
         </footer>
       </div>
 
-      
+
     </>
   );
 }
