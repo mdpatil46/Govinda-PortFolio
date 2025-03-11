@@ -14,7 +14,7 @@ function Form() {
     
   }
 
-  console.log(value);
+  // console.log(value);
   
   const handelClick = ()=>{
     if(!value.name || !value.email || !value.massage){
